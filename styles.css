@@ -1,0 +1,13 @@
+.navbar .navbar-nav .nav-item .nav-link {
+    color: black;
+}
+
+.navbar-brand a{
+    color: black;
+    text-decoration: none;
+
+}
+
+.custom-shadow {
+    box-shadow: 0 4px 8px rgba(198, 75, 75, 0.2);
+}
