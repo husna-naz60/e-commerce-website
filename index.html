@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Latest compiled and minified CSS -->
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="styles.css">
@@ -13,29 +13,43 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-info custom-shadow">
+        <nav class="navbar navbar-expand-lg bg-info custom-shadow ">
             <!-- container is use for responsivness -->
-            <div class="container ">
-                <a href="#" class="navbar-brand text-dark"> <i class="fa fa-user-circle"></i> Husna Naz</a>
+            <div class="container">
+                <a href="#" class="navbar-brand text-dark"> <i class="fa fa-user-circle"></i> E-Shop</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-                <div class="collapse navbar-collapse" id="Nav">
+                <div class="collapse navbar-collapse " id="Nav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a href="#" class="nav-link"><i class="fa fa-home"></i>Home</a>
+                        <a href="index.html" class="nav-link "><i class="fa fa-home"></i>Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link"><i class="fa fa-info-circle"></i>About</a>
+                        <a href="about.html" class="nav-link"><i class="fa fa-info-circle"></i>About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link"><i class="fa fa-list"></i>Products</a>
+                        <a href="products.html" class="nav-link"><i class="fa fa-list"></i>Products</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link"><i class="fa fa-handshake-o"></i>Contact</a>
+                        <a href="contact.html" class="nav-link"><i class="fa fa-handshake-o"></i>Contact</a>
                     </li>
+                     
+                              <!-- Account Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="btn btn-danger btn-sm dropdown-toggle mt-2 me-2" href="#" id="accountDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa fa-user"></i> Account
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="accountDropdown">
+              <li><a class="dropdown-item" href="login.html"><i class="fa fa-sign-in"></i> Login</a></li>
+              <li><a class="dropdown-item" href="register.html"><i class="fa fa-user-plus"></i> Register</a></li>
+            </ul>
+          </li>
+
+
                     <li class="nav-item">
-                  <a href="#" class="btn btn-sm btn-danger mt-2 position-relative">
+                  <a href="cart.html" class="btn btn-sm btn-outline-danger mt-2 position-relative">
                    <i class="fa fa-shopping-cart"></i> Cart
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark">
                        3
@@ -47,12 +61,375 @@
             </div>
         </nav>
     </header>
-    <div class="bg-info border border-1 p-5  ">
-        <h2 class="text-danger"> <i class="fa fa-smile-o"></i>Hello Husna !</h2>
+    <div class="bg-light  border border-1 p-5  ">
+        <h2 class="text-danger"> <i class="fa fa-smile-o"></i>What We Offer !</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt inventore, nam exercitationem ea illum beatae velit repellat alias tempore optio cum laborum explicabo est dolorum voluptate dicta minus. Quis veritatis accusantium saepe maxime praesentium eius harum est quidem aliquid sit eaque, magnam commodi cupiditate totam eum at, nesciunt esse, optio laboriosam nam quam ea. Quidem nihil, quam modi corporis nam doloremque. Libero odit ducimus voluptate omnis amet voluptas officia ipsam, voluptatem exercitationem at odio ut beatae consequatur, accusamus culpa iure harum laboriosam nesciunt veniam. Dolorum obcaecati corrupti perspiciatis rerum, reiciendis libero enim placeat fugiat sed totam blanditiis veritatis nisi magni!</p>
+        <div class="input-group " style="max-width: 400px;"> 
+        <input type="text" class="form-control " placeholder="Search Products Here ...">
+        <button class="btn btn-outline-danger" type="button">
+            <i class="fa fa-search"></i>Search
+        </button>
+        </div>
     </div>
+
+<section>
+  <div class="p-5">
+    <h2>
+      <span class="text-info"><i class="fa fa-star"></i>
+      Our Features</span> Products
+    </h2>
+    <hr>
+
+    <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="card shadow-md hover-shadow">
+                <img src="https://picsum.photos/200/200?random=1" class="product-img" alt="Product 1">
+                <div class="card-body">
+                  <label><b>Iphone 13 Pro Max</b></label>
+                  <p class="card-text text-success">Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="card-footer">
+                  <label><i class="fa fa-money"></i> 1000$</label>
+                  <a href="#" class="btn btn-danger btn-sm float-end">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card shadow-md hover-shadow">
+                <img src="https://picsum.photos/200/200?random=2" class="product-img" alt="Product 2">
+                <div class="card-body">
+                  <label><b>Samsung Galaxy S23</b></label>
+                  <p class="card-text text-success">High performance smartphone.</p>
+                </div>
+                <div class="card-footer">
+                  <label><i class="fa fa-money"></i> 900$</label>
+                  <a href="#" class="btn btn-danger btn-sm float-end">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card shadow-md hover-shadow">
+                <img src="https://picsum.photos/200/200?random=3" class="product-img" alt="Product 3">
+                <div class="card-body">
+                  <label><b>MacBook Pro</b></label>
+                  <p class="card-text text-success">Best for developers.</p>
+                </div>
+                <div class="card-footer">
+                  <label><i class="fa fa-money"></i> 2500$</label>
+                  <a href="#" class="btn btn-danger btn-sm float-end">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card shadow-md hover-shadow">
+                <img src="https://picsum.photos/200/200?random=4" class="product-img" alt="Product 4">
+                <div class="card-body">
+                  <label><b>Apple Watch</b></label>
+                  <p class="card-text text-success">Smart fitness tracker.</p>
+                </div>
+                <div class="card-footer">
+                  <label><i class="fa fa-money"></i> 450$</label>
+                  <a href="#" class="btn btn-danger btn-sm float-end">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="card shadow-md hover-shadow">
+                <img src="https://picsum.photos/200/200?random=5" class="product-img" alt="Product 5">
+                <div class="card-body">
+                  <label><b>AirPods Pro</b></label>
+                  <p class="card-text text-success">Noise-cancelling earbuds.</p>
+                </div>
+                <div class="card-footer">
+                  <label><i class="fa fa-money"></i> 250$</label>
+                  <a href="#" class="btn btn-danger btn-sm float-end">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card shadow-md hover-shadow">
+                <img src="https://picsum.photos/200/200?random=6" class="product-img" alt="Product 6">
+                <div class="card-body">
+                  <label><b>iPad Air</b></label>
+                  <p class="card-text text-success">Tablet with M1 chip.</p>
+                </div>
+                <div class="card-footer">
+                  <label><i class="fa fa-money"></i> 700$</label>
+                  <a href="#" class="btn btn-danger btn-sm float-end">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card shadow-md hover-shadow">
+                <img src="https://picsum.photos/200/200?random=7" class="product-img" alt="Product 7">
+                <div class="card-body">
+                  <label><b>Gaming PC</b></label>
+                  <p class="card-text text-success">RTX 4090 powered desktop.</p>
+                </div>
+                <div class="card-footer">
+                  <label><i class="fa fa-money"></i> 3000$</label>
+                  <a href="#" class="btn btn-danger btn-sm float-end">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card shadow-md hover-shadow">
+                <img src="https://picsum.photos/200/200?random=8" class="product-img" alt="Product 8">
+                <div class="card-body">
+                  <label><b>Camera</b></label>
+                  <p class="card-text text-success">DSLR for professionals.</p>
+                </div>
+                <div class="card-footer">
+                  <label><i class="fa fa-money"></i> 1200$</label>
+                  <a href="#" class="btn btn-danger btn-sm float-end">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+
+      </div>
+
+
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark rounded-circle"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-dark rounded-circle"></span>
+      </button>
+    </div>
+    
+  </div>
+</section>
+
+<section id="about">
+  <div class="bg-info text-dark text-center py-5">
+    <div class="container">
+      <h2 class="display-8 fw-bold mb-3 text-white">
+        <i class="fa fa-shopping-bag text-danger"></i>
+        Find it, Love it, Buy it! 
+      </h2> 
+      <hr>
+      <p class=" mx-auto mb-4 " style="max-width: 800px;">
+        Discover amazing products at unbeatable prices. Shop your favorites,
+        explore new arrivals, and enjoy a seamless shopping experience with us.  
+        Everything you need — right at your fingertips!
+      </p>
+      
+      <div class="d-flex justify-content-center gap-3">
+        <button class="btn btn-danger  shadow-sm">
+          <i class="fa fa-list"></i> All Products
+        </button>
+        <button class="btn btn-outline-light  shadow-sm">
+          <i class="fa fa-sign-in"></i> Login
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="features" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-4 text-info">
+      <i class="fa fa-star"></i> Our <span class="text-danger">Features</span> Categories
+    </h2>
+    <p class="text-muted mb-5">Shop by category and explore the best products we offer</p>
+
+    <div class="row g-4">
+      <!-- Category 1 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card shadow border-0 h-100 feature-card">
+          <div class="card-body">
+            <i class="fa fa-mobile fa-3x text-info mb-3"></i>
+            <h5 class="card-title">Mobiles</h5>
+            <p class="card-text text-muted">Latest smartphones with best deals.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category 2 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card shadow border-0 h-100 feature-card">
+          <div class="card-body">
+            <i class="fa fa-laptop fa-3x text-danger mb-3"></i>
+            <h5 class="card-title">Laptops</h5>
+            <p class="card-text text-muted">High performance laptops & gadgets.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category 3 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card shadow border-0 h-100 feature-card">
+          <div class="card-body">
+            <i class="fa fa-headphones fa-3x text-success mb-3"></i>
+            <h5 class="card-title">Accessories</h5>
+            <p class="card-text text-muted">Headphones, chargers & more.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category 4 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card shadow border-0 h-100 feature-card">
+          <div class="card-body">
+            <i class="fa fa-shopping-bag fa-3x text-warning mb-3"></i>
+            <h5 class="card-title">Fashion</h5>
+            <p class="card-text text-muted">Trendy clothing & accessories.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4 mt-4">
+      <!-- Category 1 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card shadow border-0 h-100 feature-card">
+          <div class="card-body">
+            <i class="fa fa-mobile fa-3x text-info mb-3"></i>
+            <h5 class="card-title">Mobiles</h5>
+            <p class="card-text text-muted">Latest smartphones with best deals.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category 2 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card shadow border-0 h-100 feature-card">
+          <div class="card-body">
+            <i class="fa fa-laptop fa-3x text-danger mb-3"></i>
+            <h5 class="card-title">Laptops</h5>
+            <p class="card-text text-muted">High performance laptops & gadgets.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category 3 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card shadow border-0 h-100 feature-card">
+          <div class="card-body">
+            <i class="fa fa-headphones fa-3x text-success mb-3"></i>
+            <h5 class="card-title">Accessories</h5>
+            <p class="card-text text-muted">Headphones, chargers & more.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category 4 -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card shadow border-0 h-100 feature-card">
+          <div class="card-body">
+            <i class="fa fa-shopping-bag fa-3x text-warning mb-3"></i>
+            <h5 class="card-title">Fashion</h5>
+            <p class="card-text text-muted">Trendy clothing & accessories.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Subscribe Section -->
+<section id="subscribe" class="py-5 bg-info text-white">
+  <div class="container text-center">
+    <h2 class="mb-3">
+      <i class="fa fa-envelope-open"></i> Stay Connected!
+    </h2>
+    <p class="mb-4">
+      Subscribe to our newsletter and never miss exclusive deals, new arrivals, and updates.  
+    </p>
+
+    <form class="row justify-content-center g-2" style="max-width: 600px; margin: auto;">
+      <div class="col-md-8 col-12">
+        <input type="email" class="form-control form-control-md rounded" placeholder="Enter your email address" required>
+      </div>
+      <div class="col-md-4 col-12">
+        <button type="submit" class="btn btn-outline-danger btn-md w-100">
+          <i class="fa fa-paper-plane"></i> Subscribe
+        </button>
+      </div>
+    </form>
+
+    <!-- Social icons -->
+    <div class="mt-4 text-center">
+      <a href="#" class="text-white me-3"><i class="fa fa-facebook fa-2x"></i></a>
+      <a href="#" class="text-white me-3"><i class="fa fa-twitter fa-2x"></i></a>
+      <a href="#" class="text-white me-3"><i class="fa fa-instagram fa-2x"></i></a>
+      <a href="#" class="text-white"><i class="fa fa-linkedin fa-2x"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer bg-dark text-white pt-5 pb-3">
+  <div class="container">
+    <div class="row">
+      
+      <!-- About Section -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <h5 class="text-uppercase fw-bold mb-3">Our Store</h5>
+        <p>We provide the best quality products at affordable prices. Shop with confidence and enjoy your experience!</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <h5 class="text-uppercase fw-bold mb-3">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Shop</a></li>
+          <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Customer Service -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <h5 class="text-uppercase fw-bold mb-3">Customer Service</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">FAQ</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Shipping & Returns</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media -->
+      <div class="col-md-3 col-sm-6 mb-4">
+        <h5 class="text-uppercase fw-bold mb-3">Follow Us</h5>
+        <div class="d-flex">
+          <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-2x"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-2x"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center border-top pt-3 mt-3">
+      <p class="mb-0">&copy; 2025 YourStore. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+
 
 
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
-</html
+</html>

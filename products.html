@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Products</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-info custom-shadow ">
+            <!-- container is use for responsivness -->
+            <div class="container">
+                <a href="#" class="navbar-brand text-dark"> <i class="fa fa-user-circle"></i> E-Shop</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Nav"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="Nav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link "><i class="fa fa-home"></i>Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link"><i class="fa fa-info-circle"></i>About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="products.html" class="nav-link"><i class="fa fa-list"></i>Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link"><i class="fa fa-handshake-o"></i>Contact</a>
+                        </li>
+
+                        <!-- Account Dropdown -->
+                         <li class="nav-item dropdown">
+            <a class="btn btn-danger btn-sm dropdown-toggle mt-2 me-2" href="#" id="accountDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa fa-user"></i> Account
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="accountDropdown">
+              <li><a class="dropdown-item" href="login.html"><i class="fa fa-sign-in"></i> Login</a></li>
+              <li><a class="dropdown-item" href="register.html"><i class="fa fa-user-plus"></i> Register</a></li>
+            </ul>
+          </li>
+
+
+                        <li class="nav-item">
+                            <a href="cart.html" class="btn btn-sm btn-outline-danger mt-2 position-relative">
+                                <i class="fa fa-shopping-cart"></i> Cart
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark">
+                                    3
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class=" bg-info text-white text-center py-5 mb-4">
+        <div class="container fw-bold">
+            <h1>Our Products</h1>
+            <p class="text-muted">Discover the best deals and top quality items from our store</p>
+        </div>
+    </section>
+
+    <!-- Search and Categories -->
+    <section class="py-4 bg-white border-bottom">
+        <div class="container">
+            <div class="row g-3 align-items-center justify-content-center">
+                <!-- Search Bar -->
+                <div class="col-md-6 col-sm-12">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search products...">
+                        <button class="btn btn-info text-white"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+                <!-- Category Dropdown -->
+                <div class="col-md-4 col-sm-12">
+                    <select class="form-select">
+                        <option selected>Search by Category</option>
+                        <option value="1">Mobiles</option>
+                        <option value="2">Laptops</option>
+                        <option value="3">Accessories</option>
+                        <option value="4">Fashion</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="container py-5">
+        <div class="row g-4">
+ 
+            <!-- Product Item   p-1-->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card product-card h-100 shadow-sm border-0">
+                    <img src="https://picsum.photos/250/250?random=10" class="card-img-top p-3" alt="Smart Watch">
+                    <div class="card-body text-center">
+                        <h6 class="card-title fw-bold">Smart Watch</h6>
+                        <p class="text-muted small">Stay connected & track your health.</p>
+                        <p class="text-danger fw-bold">$120</p>
+                        <button class="btn btn-sm btn-warning"><i class="fa fa-cart-plus"></i> Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Repeat products -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card product-card h-100 shadow-sm border-0">
+                    <img src="https://picsum.photos/250/250?random=11" class="card-img-top p-3" alt="Earbuds">
+                    <div class="card-body text-center">
+                        <h6 class="card-title fw-bold">Wireless Earbuds</h6>
+                        <p class="text-muted small">Crystal clear sound & comfort fit.</p>
+                        <p class="text-danger fw-bold">$80</p>
+                        <button class="btn btn-sm btn-warning"><i class="fa fa-cart-plus"></i> Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card product-card h-100 shadow-sm border-0">
+                    <img src="https://picsum.photos/250/250?random=12" class="card-img-top p-3" alt="Backpack">
+                    <div class="card-body text-center">
+                        <h6 class="card-title fw-bold">Leather Backpack</h6>
+                        <p class="text-muted small">Durable, stylish and spacious.</p>
+                        <p class="text-danger fw-bold">$480</p>
+                        <button class="btn btn-sm btn-warning"><i class="fa fa-cart-plus"></i> Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card product-card h-100 shadow-sm border-0">
+                    <img src="https://picsum.photos/250/250?random=13" class="card-img-top p-3" alt="Shoes">
+                    <div class="card-body text-center">
+                        <h6 class="card-title fw-bold">Running Shoes</h6>
+                        <p class="text-muted small">Lightweight and comfortable.</p>
+                        <p class="text-danger fw-bold">$110</p>
+                        <button class="btn btn-sm btn-warning"><i class="fa fa-cart-plus"></i> Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- You can duplicate more products and they’ll wrap into grid rows -->
+
+        </div>
+        <div class="row g-4">
+
+            <!-- Product Item -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card product-card h-100 shadow-sm border-0">
+                    <img src="https://picsum.photos/250/250?random=10" class="card-img-top p-3" alt="Smart Watch">
+                    <div class="card-body text-center">
+                        <h6 class="card-title fw-bold">Smart Watch</h6>
+                        <p class="text-muted small">Stay connected & track your health.</p>
+                        <p class="text-danger fw-bold">$120</p>
+                        <button class="btn btn-sm btn-warning"><i class="fa fa-cart-plus"></i> Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Repeat products -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card product-card h-100 shadow-sm border-0">
+                    <img src="https://picsum.photos/250/250?random=11" class="card-img-top p-3" alt="Earbuds">
+                    <div class="card-body text-center">
+                        <h6 class="card-title fw-bold">Wireless Earbuds</h6>
+                        <p class="text-muted small">Crystal clear sound & comfort fit.</p>
+                        <p class="text-danger fw-bold">$80</p>
+                        <button class="btn btn-sm btn-warning"><i class="fa fa-cart-plus"></i> Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card product-card h-100 shadow-sm border-0">
+                    <img src="https://picsum.photos/250/250?random=12" class="card-img-top p-3" alt="Backpack">
+                    <div class="card-body text-center">
+                        <h6 class="card-title fw-bold">Leather Backpack</h6>
+                        <p class="text-muted small">Durable, stylish and spacious.</p>
+                        <p class="text-danger fw-bold">$480</p>
+                        <button class="btn btn-sm btn-warning"><i class="fa fa-cart-plus"></i> Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card product-card h-100 shadow-sm border-0">
+                    <img src="https://picsum.photos/250/250?random=13" class="card-img-top p-3" alt="Shoes">
+                    <div class="card-body text-center">
+                        <h6 class="card-title fw-bold">Running Shoes</h6>
+                        <p class="text-muted small">Lightweight and comfortable.</p>
+                        <p class="text-danger fw-bold">$110</p>
+                        <button class="btn btn-sm btn-warning"><i class="fa fa-cart-plus"></i> Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- You can duplicate more products and they’ll wrap into grid rows -->
+
+        </div>
+    </section>
+    <footer class="footer bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+
+                <!-- About Section -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h5 class="text-uppercase fw-bold mb-3">Our Store</h5>
+                    <p>We provide the best quality products at affordable prices. Shop with confidence and enjoy your
+                        experience!</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h5 class="text-uppercase fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Shop</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Customer Service -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h5 class="text-uppercase fw-bold mb-3">Customer Service</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">FAQ</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Shipping & Returns</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h5 class="text-uppercase fw-bold mb-3">Follow Us</h5>
+                    <div class="d-flex">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center border-top pt-3 mt-3">
+                <p class="mb-0">&copy; 2025 YourStore. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+
+</html>
