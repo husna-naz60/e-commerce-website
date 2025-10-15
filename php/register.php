@@ -10,7 +10,21 @@
     ✅ <strong>Success!</strong> <?php echo htmlspecialchars($_GET['success']); ?>
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
+  
 <?php } ?><br>
+
+<!-- ✅ Auto-hide after 4 seconds -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const alert = document.getElementById('myAlert');
+    if (alert) {
+      setTimeout(() => {
+        const bsAlert = new bootstrap.Alert(alert);
+        bsAlert.close();
+      }, 4000); // 4000ms = 4 seconds
+    }
+  });
+</script>
 
 <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
   
