@@ -1,4 +1,5 @@
 <?php
+include('includes/header.php');
 $host = "localhost";
 $user = "root";
 $pass = "";  // leave blank for XAMPP
